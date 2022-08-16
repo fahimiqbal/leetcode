@@ -4,9 +4,9 @@ class Solution:
         start, end = 0, len(s) - 1
 
         while start < end:
-            while start < end and not self.isAlphaNumeric(s[start]):
+            while start < end and not s[start].isalnum():
                 start += 1
-            while end > start and not self.isAlphaNumeric(s[end]):
+            while end > start and not s[end].isalnum():
                 end -= 1
 
             if s[start].lower() != s[end].lower():
