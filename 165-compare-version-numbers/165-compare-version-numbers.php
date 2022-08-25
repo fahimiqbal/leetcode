@@ -6,7 +6,7 @@ class Solution {
      * @return Integer
      */
     function compareVersion($version1, $version2) {
-        
+        if ($version1===$version2) return 0;
         $v1 = explode('.', $version1);
         $v2 = explode('.', $version2);
             
