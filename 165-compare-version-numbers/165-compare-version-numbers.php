@@ -6,15 +6,15 @@ class Solution {
      * @return Integer
      */
     function compareVersion($version1, $version2) {
-        /*
+        
         $v1 = explode('.', $version1);
         $v2 = explode('.', $version2);
             
         $max = max(count($v1), count($v2));
         
         for($i=0; $i<$max; $i++){
-            $vNum1 = !empty($v1[$i]) ? (int) $v1[$i] : 0;
-            $vNum2 = !empty($v2[$i]) ? (int) $v2[$i] : 0;
+            $vNum1 = !empty($v1[$i]) ? intval($v1[$i]) : 0;
+            $vNum2 = !empty($v2[$i]) ? intval($v2[$i]) : 0;
             
             if($vNum1 < $vNum2){
                 return -1;
@@ -25,7 +25,9 @@ class Solution {
         }
         
         return 0;
-        */
+        
+        
+        /*
         if ($version1===$version2) return 0;
 		$v1 = explode('.', $version1);
 		$v2 = explode('.', $version2);
@@ -51,5 +53,6 @@ class Solution {
 			}
 		}
 		return 0;
+        */
     }
 }
