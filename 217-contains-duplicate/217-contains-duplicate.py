@@ -11,6 +11,7 @@ class Solution:
         return False
         """
         
+        '''
         if len(nums) < 2:
             return False
         
@@ -35,5 +36,15 @@ class Solution:
         if l==r:
             if nums[l] in check:
                 return True
+            
+        return False
+        '''
+        
+        check = set()
+        
+        for n in nums:
+            if n in check: return True
+            
+            check.add(n)
             
         return False
